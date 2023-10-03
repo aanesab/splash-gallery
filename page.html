@@ -34,7 +34,7 @@
       <section style="height: 150px" id="blank"></section>
       <section class="blog">
         <div class="blog-title">
-          <h2>Daily article</h2>
+          <h2 class="testi">Daily article</h2>
         </div>
       <div class="short-intro">
         <div class="info">
@@ -44,13 +44,69 @@
         </p>
         <p class="hidden-p">In the 1890s, Monet created dozens of paintings of Rouen Cathedral at different times of day and in different weather. At dawn, the cathedral was tinged with blue light; in the late-afternoon, it was radiant with oranges and yellows; while on cloudy days it was a duller grayish tan. By recording how the appearances of objects are affected by different lighting conditions, the Impressionists argued that their paintings were more accurate representations of the way we see the world. What appears at first sight to be a radically unrealistic style is in fact more true to the way things actually look.</p>
         <p>Read more about modern art in our weekly news letter.<br> <br> <a href="news-letter.html"> News Letter</a> </p>
+      </div>  
       </div>
-        <div class="info-photo">
+      <div class="info-photo">
           <img src="images/Modern-Works-of-Art.jpg" alt="">
         </div>
-      </div>
       </section>
       <section style="height: 100px" id="blank"></section>
+      <section id="second-section">
+        <p>Find your new favourite artists</p>
+        
+            <div>
+                <button class="icon" onclick="scrolll()"><i class="fas fa-angle-left"></i></button>
+            </div>
+            <div class="cover">
+             <ul id="scroll-images">
+            <li class="child">
+                <a href="https://en.wikipedia.org/wiki/Jackson_Pollock">
+                    <img class="child-img" src="images/artist-1.webp" alt="Jackson Pollock">   
+                </a>
+            </li>
+            <li class="child">
+                <a href="https://en.wikipedia.org/wiki/Pablo_Picasso">
+                    <img class="child-img" src="images/artist-2.jpg" alt="Pablo Picasso">
+                </a>
+            </li>
+            <li class="child">
+                <a href="https://en.wikipedia.org/wiki/Gerhard_Richter">
+                    <img class="child-img" src="images/artist-3.jpg" alt="Gerhard Richter">    
+                </a>
+            </li>
+            <li class="child">
+                <a href="https://en.wikipedia.org/wiki/Henri_Matisse">
+                    <img class="child-img" src="images/artist-4.jpg" alt="Henri Matisse">
+                </a>
+            </li>
+            <li class="child">
+                <a href="https://en.wikipedia.org/wiki/Andy_Warhol">
+                    <img class="child-img" src="images/artist-5.jpg" alt="Andy Warhol">
+                </a>
+            </li>
+            <li class="child">
+                <a href="https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD">
+                    <img class="child-img" src="images/artist-6.webp" alt="Salvador Dalí">
+                </a>
+            </li>
+        </ul>
+        </div>
+        <button class="icon" onclick="scrollr()"><i class="fas fa-angle-right"></i></button>
+
+        <script>
+            function scrolll(){
+                var left=document.querySelector(".scroll-images");
+                left.scrollBy(350, 0);
+            }
+            function scrollr(){
+                var right=document.querySelector(".scroll-images");
+                right.scrollBy(-350, 0);
+            }
+        </script>
+       
+    </section>
+    <br>
+    <br>
     </main>
     <footer>
         <ul>

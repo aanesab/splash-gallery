@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 #blank {
   height: 100px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -5,10 +10,7 @@
 
 #hero {
   height: 500px;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.5)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
     url("/images/back.jpg");
   background-position: center;
   background-size: cover;
@@ -47,7 +49,7 @@
 
 #hero-content a {
   text-decoration: none;
-  background-color: #B10631;
+  background-color: #b10631;
   padding: 12px 24px;
   color: white;
   font-size: 20px;
@@ -59,77 +61,46 @@
 
 #hero-content a:hover {
   background-color: white;
-  color: #6A041D;
-}
-
-/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
-@media (max-width: 768px) {
-  #hero {
-    height: 220px; /* Allow the section to adjust its height based on content */
-    background-size: cover; /* Maintain background image cover */
-  }
-  
-  #hero-content {
-    width: 70%; /* Adjust the width to fit the screen */
-    padding: 20px; /* Reduce padding for mobile */
-    top: 30px; /* Adjust the position from the top */
-  }
-  
-  #hero-content h1 {
-    font-size: 24px; /* Decrease font size for mobile */
-  }
-  
-  #hero-content p {
-    font-size: 14px; /* Decrease font size for mobile */
-    margin-bottom: 20px; /* Adjust margin for mobile */
-  }
-  
-  #hero-content a {
-    font-size: 12px; /* Decrease font size for mobile */
-  }
-
-  .hidden-p {
-    display: none;
-  }
-
+  color: #6a041d;
 }
 
 .blog {
-  display: flex;
-  flex-direction: column;
+ display: flex;
+
 }
 
-.blog h2 {
-  display: flex;
-  justify-content: center;
-  font-size: 46px;
-  color: #140105;
+
+.blog-title {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 32px;
 }
 
 .short-intro {
   display: flex;
   justify-content: center;
   height: 500px;
+  
 }
 
 .info {
   width: 50%;
   background-color: white;
-  margin: 20px;
+  
 }
 
 .info a {
   text-decoration: none;
   color: white;
-  background-color: #B10631;
-  border:  0.5px solid #B10631;
+  background-color: #b10631;
+  border: 0.5px solid #b10631;
   border-radius: 4px;
   padding: 2px;
 }
 
 .info a:hover {
-  border-color: #6A041D;
-  background-color: #6A041D;
+  border-color: #6a041d;
+  background-color: #6a041d;
   color: white;
 }
 
@@ -141,4 +112,142 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#second-section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(255, 254, 254);
+}
+
+#second-section p {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #140105;
+  text-align: center;
+}
+
+.coveri {
+  position: relative;
+  width: 70%;
+  height: 50%;
+  margin-left: 10rem;
+}
+
+
+#scroll-images {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+#scroll-images::-webkit-scrollbar {
+  width: 3px;
+}
+
+#scroll-images::-webkit-scrollbar-thumb {
+  background-color: #6a041d;
+  border-radius: 6px;
+}
+
+#scroll-images::-webkit-scrollbar-thumb:hover {
+  background-color: #b10631;
+}
+
+.child {
+  min-width: 350px;
+  height: 300px;
+  margin: 1px 10px;
+  cursor: pointer;
+  border: 1px solid white;
+  overflow: hidden;
+  border: 2px solid rgb(232, 219, 219);
+  box-shadow: 2px 4px 8px rgb(61, 58, 58);
+  margin-bottom: 2rem;
+}
+
+.child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon {
+  color: rgb(245, 232, 232);
+  background-color: rgb(249, 235, 235);
+  font-size: 50px;
+  outline: none;
+  border: none;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  #hero {
+    height: 220px; /* Allow the section to adjust its height based on content */
+    background-size: cover; /* Maintain background image cover */
+  }
+
+  #hero-content {
+    width: 70%; /* Adjust the width to fit the screen */
+    padding: 20px; /* Reduce padding for mobile */
+    top: 30px; /* Adjust the position from the top */
+  }
+
+  #hero-content h1 {
+    font-size: 24px; /* Decrease font size for mobile */
+  }
+
+  #hero-content p {
+    font-size: 14px; /* Decrease font size for mobile */
+    margin-bottom: 20px; /* Adjust margin for mobile */
+  }
+
+  #hero-content a {
+    font-size: 12px; /* Decrease font size for mobile */
+  }
+
+  .testi {
+    margin-top: -1em;
+    font-size: 30px;
+  }
+  
+
+  .hidden-p {
+    display: none;
+  }
+
+
+  .short-intro {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info-photo {
+    width: 100%;
+  }
+
+  .coveri {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
