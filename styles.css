@@ -64,9 +64,14 @@
   color: #6a041d;
 }
 
+.testt {
+  display: flex;
+  
+}
+
 .blog {
  display: flex;
-
+  flex-direction: column;
 }
 
 
